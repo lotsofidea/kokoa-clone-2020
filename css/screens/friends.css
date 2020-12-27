@@ -10,6 +10,32 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
+@keyframes hideSplashScreen {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height:100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 128px;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+
+
 .friends-screen {
   padding: 0px var(--horizontal--space);
 }
@@ -23,3 +49,10 @@
   margin-top: 25px;
   border-top: var(--main-border)
   padding-top: 15px;
+}
+
+
+  
+
+
+
